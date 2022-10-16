@@ -13,7 +13,7 @@
  * @package           Fp_Wordpress_Plugin_Remove_Menu_Items
  *
  * @wordpress-plugin
- * Plugin Name:       WordPress Plugin Remove Menu Items
+ * Plugin Name:       Remove Comments Menus from Admin Dashboard
  * Plugin URI:        https://https://github.com/flexseth/wordpress-comments-remove-menu-items
  * Description:       Remove all menu items from WordPress Admin Dashboard for Comments.
  * Version:           1.0.0
