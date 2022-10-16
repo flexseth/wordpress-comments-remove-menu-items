@@ -80,3 +80,18 @@ function run_fp_wordpress_plugin_remove_menu_items() {
 
 }
 run_fp_wordpress_plugin_remove_menu_items();
+
+// Remove WordPress Admin Dashboard Menus for Comments
+
+// Removes from admin menu
+add_action( 'admin_menu', 'fp_admin_dashboard_remove_admin_menus' );
+function fp_admin_dashboard_remove_admin_menus() {
+    remove_menu_page( 'edit-comments.php' );
+}
+// Removes from admin bar
+function fp_admin_dashboard_admin_bar_render() {
+    global $wp_admin_bar;
+    $wp_admin_bar->remove_menu('comments');
+}
+add_action( 'wp_before_admin_bar_render', 'fp_admin_dashboard_admin_bar_render' );
+?>
